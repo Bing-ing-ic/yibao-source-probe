@@ -44,5 +44,12 @@ for name, url in TARGETS:
 
 ok = sum(1 for x in results if x[1] == 200)
 print(f"\n可达 {ok}/{len(results)}")
-# 不因为个别站点不可达而让 job 失败；仅打印结论
+
+lines = ["# 探测结果（GitHub Actions ubuntu runner）", "", f"可达 {ok}/{len(results)}（200 为可访问）", "",
+         "| 站点 | 状态 | 耗时 | 字节 | 标题 | 备注 |", "|---|---|---|---|---|---|"]
+for name, status, dt, size, title, note in results:
+    lines.append(f"| {name} | {status} | {dt:.2f}s | {size} | {title} | {note} |")
+with open("result.md", "w", encoding="utf-8") as f:
+    f.write("\n".join(lines) + "\n")
+
 sys.exit(0)
