@@ -13,11 +13,18 @@ UA = {
 TARGETS = [
     ("国家局-首页", "https://www.nhsa.gov.cn"),
     ("国家局-政策文件", "https://www.nhsa.gov.cn/col/col104/index.html"),
+    ("国家局-政策解读", "https://www.nhsa.gov.cn/col/col105/index.html"),
+    ("国家局-通知公告", "https://www.nhsa.gov.cn/col/col109/index.html"),
     ("云南省局-首页", "https://ylbz.yn.gov.cn"),
     ("云南省局-政策文件", "https://ylbz.yn.gov.cn/zfxxgk/zcwj/qtwj/"),
     ("玉溪市-首页", "http://www.yuxi.gov.cn"),
     ("玉溪市-栏目列表", "http://www.yuxi.gov.cn/yxgovfront/newDepartmentContentds.jspx?channelId=16576&pageNo=1&path=yxszfxxgk"),
     ("澄江市-首页", "https://www.yncj.gov.cn"),
+    ("江川区-首页", "https://www.ynjc.gov.cn"),
+    ("红塔区-首页", "https://www.hongta.gov.cn"),
+    ("通海县-首页", "https://www.tonghai.gov.cn"),
+    ("华宁县-首页", "https://www.huaning.gov.cn"),
+    ("元江县-首页", "https://www.yjx.gov.cn"),
 ]
 
 results = []
